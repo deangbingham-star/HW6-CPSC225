@@ -1,0 +1,87 @@
+/******************************************************************************
+Dean Bingham
+10/2/2026
+HW 6, Monster polymorphism
+
+*******************************************************************************/
+#include <iostream>
+#include <string>
+#include <ctime>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+
+/*
+TO DO:
+    Create monster class, with private strength variable, have speak function
+    derive 3 classes from monster, each with unique speak function
+    create array of 5 monster pointers
+
+*/
+
+
+int genRandNum()
+{
+	
+	int randNum = 1 +(rand() % 30);
+	return randNum;
+};
+
+
+
+class monster
+{
+protected :
+	int strength;
+
+
+protected:
+	void speak()
+	{
+		cout<<"BOO!"<<endl;
+
+	};
+
+	int getStrength
+	{
+
+	};
+	
+	protected:
+	monster()
+	{
+	    //default constructor
+	    cout<<"\nMonter Created"<<endl;
+	};
+
+};
+
+
+//***************************************
+int main()
+{
+	std::cout<<"Script Start\n"<<endl;
+    srand(time(0));
+
+//testing for random numbers
+/*
+	int i;
+	for(i=0; i<10; i++)
+	{
+	    
+		int randNum = genRandNum();
+		cout<<"Random num: "<<randNum<<endl;
+	}
+*/
+
+
+	//initialize monsters
+//	monster Ghost;
+//	monster Skeleton;
+//	monster Professor_Marriot;
+
+
+
+	return 0;
+}
