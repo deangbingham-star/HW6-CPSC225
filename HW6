@@ -32,11 +32,11 @@ int genRandNum()
 
 class monster
 {
-protected :
+public :
 	int strength;
 
 
-protected:
+public:
 	void speak()
 	{
 		cout<<"BOO!"<<endl;
@@ -45,7 +45,7 @@ protected:
 
 	int getStrength
 	{
-
+        strength = genRandNum();
 	};
 	
 	protected:
@@ -57,6 +57,11 @@ protected:
 
 };
 
+
+class childMonster: public Monster 
+{
+ 
+};
 
 //***************************************
 int main()
@@ -77,11 +82,16 @@ int main()
 
 
 	//initialize monsters
-//	monster Ghost;
-//	monster Skeleton;
-//	monster Professor_Marriot;
+//	monster Ghost;   //"BOO"
+//	monster Skeleton;  //"Bones"
+//	monster Professor_Marriot;  //"DO YOUR HOMEWORK!"
 
 
 
+    int j;
+    for(j=0;j<5;j++)
+    {
+        
+    }
 	return 0;
 }
