@@ -2,6 +2,7 @@
 Dean Bingham
 10/2/2026
 HW 6, Monster polymorphism
+help from mom
 
 *******************************************************************************/
 #include <iostream>
@@ -32,11 +33,11 @@ int genRandNum()
 
 class monster
 {
-public :
+protected :
 	int strength;
 
 
-public:
+protected:
 	void speak()
 	{
 		cout<<"BOO!"<<endl;
@@ -49,7 +50,7 @@ public:
 		return strength;
 	};
 
-protected:
+public:
 	monster()
 	{
 		//default constructor
@@ -92,7 +93,14 @@ int main()
 	int j;
 	for(j=0; j<5; j++)
 	{
-
+       //create array of 5 monster pointers
+       //each loop, ask which monster user wants to add to the array
+       //then generate random strength number for that monster
 	}
+	//after loop, print all monster greetings
+	
+	//release all allocated memory
+	
+	
 	return 0;
 }
