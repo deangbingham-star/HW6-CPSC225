@@ -1,0 +1,51 @@
+
+DocViewer
+Page
+of 2
+Pages
+CS225 HW6
+Create a class called Monster. The Monster class has a strength member variable
+that is not public (select private or protected). The Monster class should have a
+default constructor that randomly assigns a strength value between 1 and 30. The
+Monster class has a member function: speak(which prints “Boo”) and getStrength
+(which returns the strength). Create a static data member that keeps track of the
+number of monsters created.
+Derive 3 classes from Monster: Zombie, Werewolf, and Vampire. All 3 child
+classes inherit everything from the parent, but they all have their own version of the
+speak function. Create default constructors for each class that prints: “it’s a
+______”(Zombie, Vampire, or Werewolf)
+In main, create an array of 5 Monster pointers. Ask the users to select which
+monster they would like to face each time through the loop and dynamically allocate
+memory for that type of monster.
+After all the monsters have been created, loop through the array of pointers and call
+the speak member function for each object. Print the total strength of all monsters
+added together. You must release all the memory you dynamically allocated
+before the program ends.
+Running the program at this point might look like (user input in green)….
+Select the monster type: (Zombie, Vampire, Werewolf) :Zombie
+Monster #1 with strength 2 appears
+it's a Zombie
+Select the monster type: (Zombie, Vampire, Werewolf) :Ghost
+Invalid Selection.
+Select the monster type: (Zombie, Vampire, Werewolf) :Vampire
+Monster #2 with strength 14 appears
+it's a Vampire
+Select the monster type: (Zombie, Vampire, Werewolf) :Werewolf
+Monster #3 with strength 16 appears
+it's a Werewolf
+Select the monster type: (Zombie, Vampire, Werewolf) :Vampire
+Monster #4 of strength 3 appears
+it's a Vampire
+Select the monster type: (Zombie, Vampire, Werewolf) :Zombie
+Monster
+WerewolfVampireZombie
+Monster #5 of strength 22 appears
+it's a Zombie
+Monster greetings...
+Brains..
+Blood...
+Woof
+Blood...
+Brains..
+Total strength of monsters is 57
+Annotations
