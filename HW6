@@ -37,7 +37,7 @@ protected :
 	int strength;
 
 
-protected:
+public:
 	virtual void speak()
 	{
 		cout<<"BOO!"<<endl;
@@ -94,12 +94,13 @@ int main()
 
 	//initialize monsters
 	monster ghost;   //"BOO"
-	monster skeleton;  //"Bones"
+//	monster skeleton;  //"Bones"
 	monster professor_Marriot;  //"DO YOUR HOMEWORK!"
 
-    skeleton s;
-
-    s.speak;
+    monster*m = new skeleton();
+    m->speak();
+    
+    
 
 	int j;
 	for(j=0; j<5; j++)
