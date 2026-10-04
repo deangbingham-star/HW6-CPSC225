@@ -62,6 +62,11 @@ public:
 
 class skeleton: public monster
 {
+    void speak()
+    {
+        cout<<"Bones"<<endl;
+    }
+    
     public : skeleton()
     {
         //default constructor
@@ -88,11 +93,13 @@ int main()
 
 
 	//initialize monsters
-	monster Ghost;   //"BOO"
-	monster Skeleton;  //"Bones"
-	monster Professor_Marriot;  //"DO YOUR HOMEWORK!"
+	monster ghost;   //"BOO"
+	monster skeleton;  //"Bones"
+	monster professor_Marriot;  //"DO YOUR HOMEWORK!"
 
+    skeleton s;
 
+    s.speak;
 
 	int j;
 	for(j=0; j<5; j++)
