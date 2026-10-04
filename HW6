@@ -38,7 +38,7 @@ protected :
 
 
 protected:
-	void speak()
+	virtual void speak()
 	{
 		cout<<"BOO!"<<endl;
 
@@ -60,9 +60,13 @@ public:
 };
 
 
-class childMonster: public monster
+class skeleton: public monster
 {
-
+    public : skeleton()
+    {
+        //default constructor
+        cout<<"Skelly Created"<<endl;
+    };
 };
 
 //***************************************
